@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+body{
+    background: #efefef;
+    margin: auto;
+}
+/*Background color*/
+body{
+    background-color: rgb(232, 221, 221);
+}
+/*Images*/
+
+.logo{
+    width: 70px;
+    margin-right: 45px;
+}
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(4, 4, 248);
+    padding: 5px 5%;
+}
+/*Icons left side*/
+.nav-left{
+    color: rgb(255, 255, 255);
+    display:flex;
+    font-size: 15px;
+    margin-left: 0%;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-left.name{
+    margin: 50%;
+  
+}
+.nav-left ul li{
+    list-style: none;
+    display: inline-block;
+}
+.nav-left ul li h2 {
+    position:relative;
+    justify-content: space-between;
+    font-size: medium;
+    width: 40px;
+    margin: 0 40px;
+}
+.nav-left ul li h2:after{
+content: '';
+width: 0%;
+height: 3px;
+background: #ff004f;
+position: absolute;
+left: 0;
+bottom: -6px;
+transition: 0.5s;
+}
+
+.nav-left ul li h2:hover::after{
+    cursor: pointer;
+    width: 100%;
+}
+
+/*Icons right side*/
+
+/*background pic*/
+
+.profile-container{
+    padding: 20px 15%;
+
+    color: rgb(0, 0, 0);
+}
+.background-container{
+    width: 100%;
+    height: 290px;
+    border-radius: 6px;
+    margin-bottom: 14px;
+}
+.profile-details{
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-sizing: border-box;    
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0.2px 0.2px;
+    
+}
+.p-row{
+    display: flex;
+    align-items: flex-start;
+}
+.profile-pic{
+    width: 100px;
+    border-radius: 50% 50% 50% 50%;
+    margin: 20px;
+}
+.p-row div h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.p-row div p{
+    font-size: 13px;
+}
+.p-row div img{
+    width: 25px;
+    border-radius: 50%;
+    margin-top: 12px;
+}
+.p-right button{
+    background: #1876f2;
+    border: 0;
+    outline: 0;
+    padding: 6px 10px;
+    display: inline-flex;
+    align-items: right;
+    color: #fff;
+    border-radius: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+    
+.p-right button img{
+    width: 20px;
+    margin-right: 10px;
+}
+.p-right button:first-child{
+    background-color: #e4e6eb;
+    color: #000;
+}
+.p-right a{
+    margin-left: 10px;
+    border-radius: 50%;
+
+    padding: 10px;
+    display: inline-flex;
+  
+}
+.p-right a:hover {
+    background: #e4e6eb;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.p-right a:after {
+    background: #e4e6eb6f;
+    transition: 0.1s;
+}
+.p-right a img{
+    width: 20px;
+    
+}
+.p-right{
+    text-align: right;
+
+}
+
+.write-post-container{
+   padding: 20px 15%;
+   background:#ffffff;
+   border-radius: 6px;
+   padding: 30px;
+   color: #626262;
+   box-shadow: 0.2px 0.2px;
+  
+}
+.user-profile{
+    display: flex;
+    align-items: center;
+    
+}
+.user-profile img{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.user-profile img :hover{
+    cursor: pointer;
+}
+.user-profile img   :after{
+    background-color: #626262;
+    transition-duration: 0.3s;
+}
+.user-profile p{
+    margin-bottom: -5px;
+    font-weight: 500;
+    color: #626262;
+}
+.user-profile small{
+    font-size: 12px;
+}
+.post-input-container{
+    padding-left: 55px;
+    padding-top: 20px;
+}
+.post-input-container textarea{
+   width: 100%;
+   border: 0;
+   outline: 0;
+   border-bottom: 1px solid #ccc;
+   background: transparent;
+   resize: none;
+}
+.add-post-links{
+    display: flex;
+    margin-top: 10px;
+}
+.add-post-links a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #626262;
+   margin-right: 22px;
+   font-size: 13px;
+   font-weight: 500;
+   
+}
+
+.add-post-links img{
+    width: 30px;
+    margin-right: 7px;
+    align-items: center;
+}
+
+.mypost{
+    width: 100%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    box-sizing: border-box;    
+    display: block;
+    align-items: flex-start;
+    color:#626262;
+    margin: 20px 0;
+    box-shadow: 0.2px 0.2px;
+}
+.user-profile span{
+    font-size: 13px;
+    color:darkgray;
+
+}
+.caption{
+    color: #9a9a9a;
+    margin: 15px 0;
+    font-size: 15px;
+}
+.post-text a{
+    color: #1876f2;
+    text-decoration: none;
+}
+.firstpost{
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 5px;
+
+}
+.firstpost {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 5px;
+
+}
+.post-row{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.act-icons div img{
+    width: 20px;
+   margin-right: 10px;
+   align-items: center;
+
+   }
+.act-icons div{
+    display: flex;
+    display: inline-flex;
+    align-items:center;
+    margin-left: 40px;
+    padding: 5px 50px;
+
+}
+.act-icons :hover{
+    cursor: pointer;
+    transition: 0.01s;
+    background: lightgray;
+}
+.post-pfp-icon{
+    display: flex;
+    align-items: center;
+}
+.post-pfp-icon img{
+    width: 30px;
+    border-radius: 50%;
+}
+.p-info{
+    display: flex;
+    align-self: flex-start;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+.info-col{
+    flex-basis: 33%;
+}
+.post-col{
+    flex-basis: 65%;
+}
+.p-intro{
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    box-shadow: 0.2px 0.2px;
+   
+}
+.p-intro h3{
+    font-Weight: 600;
+}
+.intro-text{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 15px;
+}
+.p-intro hr{
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 24px 0;
+}
+.p-intro ul li{
+    list-style: none;
+    font-size: 15px;
+    margin: 15px 0 ;
+    display: flex;
+    align-items: center;
+}
+.p-intro ul li img{
+    width: 25px;
+    margin-right: 10px;
+}
+.title-box a{
+    text-decoration: none;
+    color: #1876f2;
+    font: size 14px;
+}
+.photo-container-box{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+    margin-top: 10px;
+    text-align:left;
+    font-size: 12px;
+    font-weight: 600;
+}
+.photo-container-box img{
+    width: 90px;
+    height: 90px;
+    
+}
+.photo-container-box div {
+    cursor:pointer;
+    width: 100%
+}
