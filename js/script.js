@@ -2,6 +2,7 @@ var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
     spaceBetween: 25,
     centerSlide: 'true',
+    loop: true,
     fade: 'true',
     pagination: {
       el: ".swiper-pagination",
