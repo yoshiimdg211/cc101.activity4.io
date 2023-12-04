@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style-lolito.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <h2>Welcome to my website<br></h2>
+            <p>Hi, I'm <span> Lolito C. Tagumpay Jr.</span> <br> at your service.</p>
+        </div>
+    </div>
+</div>
+<!------------about------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/405249786_311104285220464_4803788598070762083_n.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! Welcome on my first website. My name is Lolito C. Tagumpay Jr. I'm
+                    19 year's old currently a 1st year BSIT student in Quezon City University.
+                    I love games that's why I choose being an IT, because one of my dream is to 
+                    make a game. I'm eager to learn more about coding to make my dream come true.
+                    And this is my start!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Graphic & Web Design</span></li>
+                            <li><span>Photography & Editing</span></li>
+                            <li><span>Illustration & Drawing</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>College</span><br>Study at Quezon City University</li>
+                            <li><span>Senior High School</span><br>Study at Golden Link College</li>
+                            <li><span>High School</span><br>Study at Cielito Zamora Jubior High School</li>
+                            <li><span>Elementary</span><br>Study at Cielito Zamora Memorial Elementary School</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for( tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for( tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+</html>
