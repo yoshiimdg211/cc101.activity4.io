@@ -1,0 +1,306 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+body{
+  background: #f3f3f3;
+  margin: auto;
+}
+/*Background color*/
+body{
+  background-color: rgb(54, 54, 54);
+}
+/*Images*/
+
+.logo{
+  width: 70px;
+  margin-right: 45px;
+}
+
+nav{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(6, 54, 124);
+  padding: 5px 5%;
+}
+/*Icons left side*/
+.nav-left{
+  color: rgb(221, 221, 221);
+  display:flex;
+  font-size: 15px;
+  margin-left: 0%;
+  flex-direction: row;
+  align-items: center;
+}
+.nav-left.name{
+  margin: 50%;
+
+}
+.nav-left ul li{
+  list-style: none;
+  display: inline-block;
+}
+.nav-left ul li h2 {
+  text-align: center;
+  position:relative;
+  justify-content: space-between;
+  font-size: medium;
+  width: 40px;
+  margin: 0 40px;
+}
+.nav-left ul li h2:after{
+content: '';
+width: 0%;
+height: 3px;
+background: #ff004f;
+position: absolute;
+left: 0;
+bottom: -6px;
+transition: 0.5s;
+}
+
+.nav-left ul li h2:hover::after{
+  cursor: pointer;
+  width: 100%;
+}
+
+/*Icons right side*/
+
+/*background pic*/
+
+.profile-container{
+  padding: 20px 15%;
+
+  color: rgb(0, 0, 0);
+}
+.background-container{
+  width: 100%;
+  height: 290px;
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+.profile-details{
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-sizing: border-box;    
+  display: flex;
+  align-items: flex-start;
+}
+.p-row{
+  display: flex;
+  align-items: flex-start;
+}
+.profile-pic{
+  width: 100px;
+  border-radius: 50%;
+  margin: 20px;
+}
+.p-row div h3{
+  font-size: 25px;
+  font-weight: 600;
+}
+.p-row div p{
+  font-size: 13px;
+}
+.p-row div img{
+  width: 25px;
+  border-radius: 50%;
+  margin-top: 12px;
+}
+.p-right button{
+  background: #1876f2;
+  border: 0;
+  outline: 0;
+  padding: 6px 10px;
+  display: inline-flex;
+  align-items: right;
+  color: #fff;
+  border-radius: 3px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+  
+.p-right button img{
+  width: 20px;
+  margin-right: 10px;
+}
+.p-right button:first-child{
+  background-color: #e4e6eb;
+  color: #000;
+}
+.p-right a{
+  margin-left: 10px;
+  border-radius: 50%;
+
+  padding: 10px;
+  display: inline-flex;
+
+}
+.p-right a:hover {
+  background: #e4e6eb;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.p-right a:after {
+  background: #e4e6eb6f;
+  transition: 0.1s;
+}
+.p-right a img{
+  width: 20px;
+  
+}
+.p-right{
+  text-align: right;
+
+}
+
+.write-post-container{
+ padding: 20px 15%;
+ background:#ffffff;
+ border-radius: 6px;
+ padding: 30px;
+ color: #626262;
+
+}
+.user-profile{
+  display: flex;
+  align-items: center;
+  
+}
+.user-profile img{
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.user-profile img :hover{
+  cursor: pointer;
+}
+.user-profile img   :after{
+  background-color: #626262;
+  transition-duration: 0.3s;
+}
+.user-profile p{
+  margin-bottom: -5px;
+  font-weight: 500;
+  color: #626262;
+}
+.user-profile small{
+  font-size: 12px;
+}
+.post-input-container{
+  padding-left: 55px;
+  padding-top: 20px;
+}
+.post-input-container textarea{
+ width: 100%;
+ border: 0;
+ outline: 0;
+ border-bottom: 1px solid #ccc;
+ background: transparent;
+ resize: none;
+}
+.add-post-links{
+  display: flex;
+  margin-top: 10px;
+}
+.add-post-links a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #626262;
+ margin-right: 22px;
+ font-size: 13px;
+ font-weight: 500;
+ 
+}
+
+.add-post-links img{
+  width: 30px;
+  margin-right: 7px;
+  align-items: center;
+}
+
+.mypost{
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-sizing: border-box;    
+  align-items: flex-start;
+  color:#626262;
+  margin: 20px 0;
+}
+.user-profile span{
+  font-size: 13px;
+  color:rgb(122, 122, 122);
+
+}
+.caption{
+  color: #1d1c1c;
+  margin: 15px 0;
+  font-size: 15px;
+}
+.post-text a{
+  color: #1876f2;
+  text-decoration: none;
+}
+.firstpost{
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 5px;
+
+}
+.firstpost {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 5px;
+
+}
+.post-row{
+  
+  display: flex;
+ align-items: center;
+  justify-content: space-between;
+  
+}
+.act-icons div img{
+  width: 20px;
+ margin-right: 10px;
+
+ }
+.act-icons div{
+  display: inline-flex;
+  align-items: center;
+  margin-right: 70px;
+
+}
+.act-icons div img:hover{
+  cursor: pointer;
+  width: 30px;
+  font-size:30;
+  transition: 0.2s;
+  padding: 0%;
+  background: blue;
+  border-radius: 50%;
+  margin:0 10px;
+  position:relative;
+}
+.post-pfp-icon{
+  display: flex;
+  align-items: center;
+}
+.post-pfp-icon img{
+  width: 30px;
+  border-radius: 50%;
+}
+.info-col{
+  margin-top: 20px;
+  flex-basis: 33%;
+}
+.post-col{
+  flex-basis: 65%;
+}
